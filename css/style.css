@@ -1,0 +1,154 @@
+/*----------MENU__FOTO----------*/
+
+.menu__foto {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.foto {
+    width: 25.5rem;
+}
+
+/*----------EXEPERIENCIA----------*/
+
+.experiencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 3rem;
+
+    height: 100%;
+}
+
+.experiencia div {
+    padding-bottom: 3rem;
+    width: 30rem;
+}
+
+.experiencia__empresa {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--ciano);
+    margin-bottom:0.5rem;
+}
+
+.experiencia__periodo {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--ciano-claro);
+    margin-bottom:0.5rem;
+}
+
+.experiencia__descricao {
+    font-size: 1rem;
+}
+
+/*----------FORMAÇÃO----------*/
+
+.formacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 2rem;
+
+    height: 100%;
+}
+
+.formacao__titulo {
+    font-size: 22px;
+    font-weight: 700, Bold;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.formacao__academica___curso::marker {
+    line-height: 18px;
+    padding-bottom: 0.5rem;
+}
+
+.conheimentos_icones-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    width: 35rem;
+}
+
+.conhecimentos__icone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conhecimentos__icone-imagem {
+    width: 60px;
+    height: 50px;
+    padding: 1rem;
+}
+
+/*----------CONTATOS----------*/
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+
+    height: 100%;
+}
+
+.contato__enderecos {
+    padding: 0.5rem;
+}
+
+.contato__redes {
+    display: flex;
+    padding-top: 2rem;
+}
+
+.contato__redes-link a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    margin: 0 1rem 0 2rem;
+}
+
+.contao__linkedin{
+    background-image: url(../img/iconmonstr-linkedin-3.svg);
+}
+
+.contao__github {
+    background-image: url(../img/iconmonstr-github-3.svg);
+}
+
+.contao__freelancer {
+    background-image: url(../img/freelancer-icon.svg);
+}
+
+.line {
+    background-color: var(--ciano-claro);
+
+    border-radius: 8px;
+    
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+
+    width: 20rem;
+    height: 5px;
+}
+
+/*----------DESABILITAR----------*/
+
+.disable{
+    display: none;
+}
+
+.ativa {
+    color: var(--branco);
+}
