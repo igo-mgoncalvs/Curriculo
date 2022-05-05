@@ -1,74 +1,31 @@
-const menuHome = document.querySelector ('.menu__home')
-const menuExperiencia = document.querySelector ('.menu__experiencia')
-const menuFormação =  document.querySelector ('.menu__formação')
-const menuContato = document.querySelector ('.menu__contato')
-const menuRedes = document.querySelector ('.menu__redes')
+const menus = document.querySelectorAll('.menu__paginas___link');
+const corpo = document.querySelectorAll('.corpo');
 
+for (let clickPagina = 0; clickPagina < menus.length;clickPagina++) {
+    const pagina = menus[clickPagina]
+    
+    pagina.onclick = function (){
+        
+        const menuAtivo = document.querySelector('.ativa')
+        menuAtivo.classList.remove ('ativa')
+        menus[clickPagina].classList.add ('ativa')
 
-const home = document.querySelector ('.menu__foto')
-const experiencia = document.querySelector ('.experiencia')
-const formacao = document.querySelector ('.formacao')
-const contato = document.querySelector ('.contato')
+        const paginaAtiva = document.querySelector('.ativa-main')
 
+        paginaAtiva.classList.remove ('ativa-main')
+        corpo[clickPagina + 1].classList.add ('ativa-main')
 
-menuHome.addEventListener ('click', () =>{
-    home.classList.remove ('disable')
-    experiencia.classList.add ('disable')
-    formacao.classList.add ('disable')
-    contato.classList.add ('disable')
-    menuRedes.classList.remove ('disable')
-})
+        if (clickPagina <= 3) {
+            const contatos = document.querySelector('.menu__redes')
 
-menuExperiencia.addEventListener ('click', () =>{
-    home.classList.add ('disable')
-    experiencia.classList.remove ('disable')
-    formacao.classList.add ('disable')
-    contato.classList.add ('disable')
-    menuRedes.classList.remove ('disable')
-})
-
-menuFormação.addEventListener ('click', () =>{
-    home.classList.add ('disable')
-    experiencia.classList.add ('disable')
-    formacao.classList.remove ('disable')
-    contato.classList.add ('disable')
-    menuRedes.classList.remove ('disable')
-})
-
-menuContato.addEventListener ('click', () =>{
-    home.classList.add ('disable')
-    experiencia.classList.add ('disable')
-    formacao.classList.add ('disable')
-    contato.classList.remove ('disable')
-    menuRedes.classList.add ('disable')
-})
-
-
-
-menuHome.addEventListener ('click', () =>{
-    menuHome.classList.add ('ativa')
-    menuExperiencia.classList.remove ('ativa')
-    menuFormação.classList.remove ('ativa')
-    menuContato.classList.remove ('ativa')
-})
-
-menuExperiencia.addEventListener ('click', () =>{
-    menuHome.classList.remove ('ativa')
-    menuExperiencia.classList.add ('ativa')
-    menuFormação.classList.remove ('ativa')
-    menuContato.classList.remove ('ativa')
-})
-
-menuFormação.addEventListener ('click', () =>{
-    menuHome.classList.remove ('ativa')
-    menuExperiencia.classList.remove ('ativa')
-    menuFormação.classList.add ('ativa')
-    menuContato.classList.remove ('ativa')
-})
-
-menuContato.addEventListener ('click', () =>{
-    menuContato.classList.remove ('ativa')
-    menuExperiencia.classList.remove ('ativa')
-    menuFormação.classList.remove ('ativa')
-    menuContato.classList.add ('ativa')
-})
+            contatos.classList.remove ('disabled')
+        }
+        
+        if (clickPagina >= 3) {
+            
+            const contatos = document.querySelector('.menu__redes')
+            
+            contatos.classList.add ('disabled');
+        } 
+    }
+}

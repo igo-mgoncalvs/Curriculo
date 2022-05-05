@@ -1,7 +1,7 @@
 /*----------MENU__FOTO----------*/
 
 .menu__foto {
-    display: flex;
+    display: none;
     height: 100%;
     align-items: center;
     justify-content: space-around;
@@ -14,7 +14,7 @@
 /*----------EXEPERIENCIA----------*/
 
 .experiencia {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 
@@ -49,7 +49,7 @@
 /*----------FORMAÇÃO----------*/
 
 .formacao {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 
@@ -94,7 +94,7 @@
 /*----------CONTATOS----------*/
 
 .contato {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     padding-top: 3rem;
@@ -145,10 +145,14 @@
 
 /*----------DESABILITAR----------*/
 
-.disable{
-    display: none;
+.ativa-main{
+    display: flex;
 }
 
 .ativa {
     color: var(--branco);
+}
+
+.disabled {
+    display: none;
 }
