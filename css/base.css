@@ -27,7 +27,7 @@
     flex-direction: column;
     justify-content: center;
 
-    height: 55vw;
+    height: 55.2vw;
 
     grid-area: descricao;
     grid-column: 2/3;
@@ -65,20 +65,20 @@
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 2rem;
+    line-height: 1.3;
 
-    width: 24rem;
+    width: 30rem;
 }
 
-.descricao__portifolio {
+.descricao__portfolio {
     display: flex;
-
-    width: 50%;
 
     background-color: var(--branco);
     border-radius: 50px;
 
     font-family: 'Poppins', sans-serif;
 
+    margin-right: 1rem;
     padding: 1rem;
 }
 
@@ -181,4 +181,8 @@
     width: 4rem;
 
     text-decoration: none;
+}
+
+.ativa__button:hover {
+    background-color: rgb(75, 124, 231);
 }

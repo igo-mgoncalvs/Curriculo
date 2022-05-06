@@ -1,6 +1,8 @@
 const menus = document.querySelectorAll('.menu__paginas___link');
 const corpo = document.querySelectorAll('.corpo');
 
+const viewport = document.defaultView.innerWidth
+
 for (let clickPagina = 0; clickPagina < menus.length;clickPagina++) {
     const pagina = menus[clickPagina]
     
@@ -27,5 +29,18 @@ for (let clickPagina = 0; clickPagina < menus.length;clickPagina++) {
             
             contatos.classList.add ('disabled');
         } 
+
+        if (viewport == 768 || viewport < 900) {
+        
+            const descricao = document.querySelector ('.descricao')
+
+            if (clickPagina > 0) {
+                descricao.classList.add ('disabled')
+            }
+
+            if (clickPagina == 0) {
+                descricao.classList.remove('disabled')
+            }
+        }
     }
 }
