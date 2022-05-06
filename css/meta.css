@@ -34,11 +34,98 @@
 
 @media screen and (max-width: 425px) {
     .main {
-        width: 200%;
+        width: 100%;
+        font-size: 1rem;
     }
 
     .descricao{
         height: 150vw;
     }
 
+    .menu__block {
+        justify-content: center;
+    }
+
+    .menu__paginas {
+        margin: 0;
+    }
+
+    .menu__paginas___link{
+        font-size: 12px;
+
+        margin: 18px 15px 0 0;
+        align-items: center;
+    }
+
+    .menu__redes{
+        display: none;
+    }
+
+    .descricao__nome{
+        font-size: 1.5rem;
+    }
+
+    .blinking-cursor {
+        font-size: 1.5rem;
+    }
+
+    .descricao__sobre {
+        font-size: 1rem;
+    }
+
+    .descricao__sobre:nth-child(3) {
+        font-size: 0.8rem;
+        width: 15rem;
+    }
+
+    .descricao__texto, .descricao__section, .ativa__button {
+        font-size: 0.8rem;
+        margin: 0
+    }
+
+    /*-----------EXPERIENCIA---------*/
+
+    .experiencia div{
+        width: 17.5rem;
+    }
+
+    .experiencia__empresa{
+        font-size: 1rem;
+    }
+    .experiencia__periodo, .experiencia__descricao{
+        font-size: 0.8rem;
+    }
+
+    /*-----------FORMAÇÃO-----------*/
+
+    .formacao div{
+        width: 17.5rem;
+    }
+
+    .formacao__titulo{
+        font-size: 1rem;
+    }
+
+    .formacao__academica___curso{
+        font-size: 0.8rem;
+    }
+
+    .line {
+        margin: 1rem 0
+    }
+
+    .conheimentos_icones-box {
+        padding-top: 0;
+    }
+
+    .contato__enderecos{
+        font-size: 0.8rem;
+        width: 15.5rem;
+    }
+
+    .contato__redes-link a{
+        width: 1rem;
+        width: 3rem;
+        background-repeat: no-repeat;
+    }
 }
