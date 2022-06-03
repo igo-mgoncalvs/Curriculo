@@ -1,3 +1,17 @@
+@media screen and (max-width: 1024px) {
+    .menu__redes{
+        display: none;
+    }   
+
+    .descricao{
+        display: flex;
+    }
+
+    .disabled-descricao{
+        display: flex;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .main {
         display: flex;
@@ -14,6 +28,8 @@
         
         border-bottom: 1px solid var(--cinza);
         padding-bottom: 1rem;
+
+        justify-content: center;
     }
 
     .menu__foto {
@@ -29,6 +45,10 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+    
+    .disabled-descricao {
+        display: none;
     }
 }
 
@@ -128,10 +148,9 @@
         width: 3rem;
         background-repeat: no-repeat;
     }
-}
 
-@media screen and (max-width: 1024px) {
-    .menu__redes{
+    
+    .disabled-descricao {
         display: none;
-    }   
+    }
 }

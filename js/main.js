@@ -1,5 +1,6 @@
 const menus = document.querySelectorAll('.menu__paginas___link');
 const corpo = document.querySelectorAll('.corpo');
+const contatos = document.querySelectorAll('.menu__redes-link')
 
 const viewport = document.defaultView.innerWidth
 
@@ -17,29 +18,25 @@ for (let clickPagina = 0; clickPagina < menus.length;clickPagina++) {
         paginaAtiva.classList.remove ('ativa-main')
         corpo[clickPagina + 1].classList.add ('ativa-main')
 
-        if (clickPagina <= 3) {
-            const contatos = document.querySelector('.menu__redes')
-
-            contatos.classList.remove ('disabled')
-        }
-        
-        if (clickPagina >= 3) {
-            
-            const contatos = document.querySelector('.menu__redes')
-            
-            contatos.classList.add ('disabled');
-        } 
+        contatos.forEach(desativa =>{
+                if(clickPagina == 3){
+                desativa.classList.add('disabled')
+            } else{
+            contatos.forEach(ativa =>{
+                ativa.classList.remove('disabled')
+            })}
+        })
 
         if (viewport == 768 || viewport < 900) {
         
             const descricao = document.querySelector ('.descricao')
 
             if (clickPagina > 0) {
-                descricao.classList.add ('disabled')
+                descricao.classList.add ('disabled-descricao')
             }
 
             if (clickPagina == 0) {
-                descricao.classList.remove('disabled')
+                descricao.classList.remove('disabled-descricao')
             }
         }
     }

@@ -9,11 +9,8 @@
 }
 
 .main {
-    display: grid;
-    grid-template-areas: 
-        "descricao"
-        "sobre";
-    grid-template-columns: 10vw 40vw 50vw;
+    display: flex;
+    height: 100vh;
 
     background-color: var(--azul-escuro);
 
@@ -24,15 +21,15 @@
 
 .descricao {
     display: flex;
+    flex-grow: 3;
     flex-direction: column;
     justify-content: center;
-
-    height: 55.2vw;
-
-    grid-area: descricao;
-    grid-column: 2/3;
+    align-items: center;
 }
 
+.descricao-box {
+    width: 30rem;
+}
 
 .descricao__nome {
     font-size: 2.3rem;
@@ -114,8 +111,7 @@
 .menu {
     display: flex;
     flex-direction: column;
-
-    grid-column: 3/4;
+    flex-grow: 1;
 
     background-color: #0F2D3E;
 }
@@ -148,6 +144,7 @@
 .menu__redes{
     display: flex;
     margin-top: 2rem;
+    width: 113px;
 }
 
 .menu__redes-link a {
