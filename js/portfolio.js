@@ -1,7 +1,14 @@
 const a = document.querySelector('.descricao__button')
 const opcao = document.querySelector('.descricao__section')
 
-var projetos = ['#', 'https://igo-mgoncalvs.github.io/AluraChallenge_Front-End/'];
+var projetos = [
+    '#', 
+    'https://igo-mgoncalvs.github.io/AluraChallenge_Front-End/',
+    'https://igo-mgoncalvs.github.io/aluramidi/',
+    'https://igo-mgoncalvs.github.io/Projeto-Apeperia-Alura/',
+    'https://igo-mgoncalvs.github.io/Posicione-elementos-com-flexbox/',
+    'https://github.com/igo-mgoncalvs/alura-studies'
+];
 
 opcao.addEventListener ('change', () => {
 
