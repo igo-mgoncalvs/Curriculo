@@ -7,7 +7,8 @@ var projetos = [
     'https://igo-mgoncalvs.github.io/aluramidi/',
     'https://igo-mgoncalvs.github.io/Projeto-Apeperia-Alura/',
     'https://igo-mgoncalvs.github.io/Posicione-elementos-com-flexbox/',
-    'https://github.com/igo-mgoncalvs/alura-studies'
+    'https://github.com/igo-mgoncalvs/alura-studies',
+    'https://github.com/igo-mgoncalvs/Aluroni'
 ];
 
 opcao.addEventListener ('change', () => {
